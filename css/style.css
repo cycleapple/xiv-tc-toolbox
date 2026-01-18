@@ -82,7 +82,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 1rem;
-    flex: 1;
+    align-items: start;
 }
 
 /* === Tool Card === */
@@ -113,8 +113,10 @@ body {
 
 /* === Tool Card Content === */
 .tool-icon {
-    font-size: 2rem;
+    width: 40px;
+    height: 40px;
     margin-bottom: 0.75rem;
+    image-rendering: pixelated;
 }
 
 .tool-title {
