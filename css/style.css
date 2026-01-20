@@ -154,8 +154,12 @@ body {
 .tool-icon {
     width: 40px;
     height: 40px;
+    min-width: 40px;
+    min-height: 40px;
     margin-bottom: 0.75rem;
     image-rendering: pixelated;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
 .tool-title {
