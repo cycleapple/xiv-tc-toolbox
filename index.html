@@ -32,6 +32,15 @@
     <link rel="icon" href="https://raw.githubusercontent.com/cycleapple/XIVTCLauncher/main/Resources/app.ico" type="image/x-icon">
     <link rel="shortcut icon" href="https://raw.githubusercontent.com/cycleapple/XIVTCLauncher/main/Resources/app.ico" type="image/x-icon">
 
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CXGZR89C7Q"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-CXGZR89C7Q');
+    </script>
+
     <!-- 樣式 -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -55,28 +64,28 @@
         </header>
 
         <main class="tools-grid">
-            <a href="https://cycleapple.github.io/ffxiv-collection-tc/" class="tool-card" target="_blank">
+            <a href="https://cycleapple.github.io/ffxiv-collection-tc/" class="tool-card" target="_blank" onclick="gtag('event', 'tool_click', {'tool_name': 'collection_tracker'});">
                 <img class="tool-icon" src="https://xivapi.com/i/061000/061825.png" alt="收藏查詢站">
                 <h2 class="tool-title">收藏查詢站</h2>
                 <p class="tool-description">查詢並追蹤你的遊戲內收藏品進度</p>
                 <span class="tool-status available">可用</span>
             </a>
 
-            <a href="https://cycleapple.github.io/xiv-tc-treasure-finder/" class="tool-card" target="_blank">
+            <a href="https://cycleapple.github.io/xiv-tc-treasure-finder/" class="tool-card" target="_blank" onclick="gtag('event', 'tool_click', {'tool_name': 'treasure_finder'});">
                 <img class="tool-icon" src="https://xivapi.com/i/061000/061808.png" alt="藏寶圖查詢器">
                 <h2 class="tool-title">藏寶圖查詢器</h2>
                 <p class="tool-description">快速查詢藏寶圖對應的地點位置</p>
                 <span class="tool-status available">可用</span>
             </a>
 
-            <a href="https://cycleapple.github.io/cactpot-helper/" class="tool-card" target="_blank">
+            <a href="https://cycleapple.github.io/cactpot-helper/" class="tool-card" target="_blank" onclick="gtag('event', 'tool_click', {'tool_name': 'cactpot_helper'});">
                 <img class="tool-icon" src="https://xivapi.com/i/061000/061820.png" alt="仙人微彩計算機">
                 <h2 class="tool-title">仙人微彩計算機</h2>
                 <p class="tool-description">計算仙人微彩最佳選擇路線</p>
                 <span class="tool-status available">可用</span>
             </a>
 
-            <a href="https://cycleapple.github.io/-xiv-sightseeing-tool/" class="tool-card" target="_blank">
+            <a href="https://cycleapple.github.io/-xiv-sightseeing-tool/" class="tool-card" target="_blank" onclick="gtag('event', 'tool_click', {'tool_name': 'sightseeing_log'});">
                 <img class="tool-icon" src="https://ffxiv.gamerescape.com/w/images/thumb/8/8f/Lookout_(Emote)_Emote_Icon.png/64px-Lookout_(Emote)_Emote_Icon.png" alt="探索筆記收集表">
                 <h2 class="tool-title">探索筆記收集表</h2>
                 <p class="tool-description">追蹤探索筆記完成進度</p>
